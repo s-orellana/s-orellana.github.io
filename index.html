@@ -45,8 +45,18 @@
 
         .tagline {
             margin-top: 32px;
+        }
+
+        .tagline-main {
             font-size: 1.05rem;
             line-height: 1.65;
+        }
+
+        .tagline-meta {
+            margin-top: 10px;
+            font-size: 0.88rem;
+            font-style: italic;
+            color: #444;
         }
 
         .research {
@@ -54,16 +64,38 @@
             padding-top: 32px;
         }
 
-        .research-label {
+        details {
+            cursor: pointer;
+        }
+
+        details summary {
+            list-style: none;
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
             font-size: 0.72rem;
             letter-spacing: 0.14em;
             text-transform: uppercase;
-            margin-bottom: 28px;
+            margin-bottom: 0;
+            user-select: none;
         }
 
-        .research-intro {
-            font-size: 1rem;
-            line-height: 1.75;
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details summary::after {
+            content: '+';
+            font-size: 0.9rem;
+            letter-spacing: 0;
+            color: #555;
+        }
+
+        details[open] summary::after {
+            content: '\2212';
+        }
+
+        details[open] summary {
             margin-bottom: 28px;
         }
 
@@ -74,6 +106,19 @@
         .project p {
             font-size: 1rem;
             line-height: 1.75;
+        }
+
+        .skills-list {
+            margin-top: 14px;
+            padding-left: 1.2em;
+            font-size: 1rem;
+            line-height: 2;
+        }
+
+        .research > details + details {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #ddd;
         }
 
         footer {
@@ -119,25 +164,44 @@
         <header>
             <h1>Sofia Orellana</h1>
             <p class="subtitle">Neuroscientist</p>
-            <p class="tagline">I work on neurodevelopment and its intersection with human health. I recently completed my PhD under Ed Bullmore and Petra Vértes at the University of Cambridge.</p>
+            <div class="tagline">
+                <p class="tagline-main">I work on neurodevelopment and its intersection with human health.</p>
+                <p class="tagline-meta">I recently completed my PhD under Ed Bullmore &amp; Petra Vértes at the University of Cambridge.</p>
+            </div>
         </header>
 
         <section class="research">
-            <p class="research-label">PhD work</p>
+            <details>
+                <summary>PhD work</summary>
 
-            <div class="project">
-                <p>In my <a href="https://www.pnas.org/doi/10.1073/pnas.2304704121" target="_blank" rel="noopener">first project</a> I examined how immuno-meabolic health changes associated with early life stress are linked to differences in brain structure in adulthood. Brain and body are often examined separately, despite ample evidence of their mutual influence. I believe that properly describing these interactions can teach us something about how psychiatric illness is developed and sustained, and how we may effectively treat it.</p>
-            </div>
+                <div class="project">
+                    <p>In my <a href="https://www.pnas.org/doi/10.1073/pnas.2304704121" target="_blank" rel="noopener">first project</a> I examined how immuno-metabolic health changes associated with early life stress are linked to differences in brain structure in adulthood. Brain and body are often examined separately, despite ample evidence of their mutual influence. I believe that properly describing these interactions can teach us something about how psychiatric illness is developed and sustained, and how we may effectively treat it.</p>
+                </div>
 
-            <div class="project">
-                <p>In my second project I described how different brain regions are synchronised in their structural change across adolescence. Some regions primarily orchestrate sensory and motor processes (seeing, riding a bike), others orchestrate more abstract thought (thinking about others, planning dinner). If we understand how these are jointly changing after puberty, then we can better understand the unique emotional and social changes we observe in adolescents.</p>
-            </div>
+                <div class="project">
+                    <p>In my second project I described how different brain regions are synchronised in their structural change across adolescence. Some regions primarily orchestrate sensory and motor processes (seeing, riding a bike), others orchestrate more abstract thought (thinking about others, planning dinner). If we understand how these are jointly changing after puberty, then we can better understand the unique emotional and social changes we observe in adolescents.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Technical skills</summary>
+
+                <div class="project">
+                    <p>In my work I regularly deal with large-scale datasets and complex analytics pipelines. I am comfortable working with:</p>
+                    <ul class="skills-list">
+                        <li>Clinical data</li>
+                        <li>MRI data</li>
+                        <li>Cluster computing</li>
+                    </ul>
+                </div>
+            </details>
         </section>
     </main>
 
     <footer>
         <a href="https://github.com/s-orellana" target="_blank" rel="noopener">GitHub</a>
         <a href="https://uk.linkedin.com/in/sofia-c-orellana" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=67bRZDMAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
     </footer>
 
 </body>
