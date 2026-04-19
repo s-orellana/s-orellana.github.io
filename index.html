@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofia Orellana</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: #fff;
+            color: #000;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            max-width: 660px;
+            margin: 0 auto;
+            padding: 88px 40px 64px;
+            flex: 1;
+        }
+
+        header {
+            margin-bottom: 56px;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            font-weight: normal;
+            letter-spacing: 0.01em;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            font-size: 1.05rem;
+            font-style: italic;
+        }
+
+        .tagline {
+            margin-top: 32px;
+            font-size: 1.05rem;
+            line-height: 1.65;
+        }
+
+        .research {
+            border-top: 1px solid #000;
+            padding-top: 32px;
+        }
+
+        .research-label {
+            font-size: 0.72rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+        }
+
+        .research-intro {
+            font-size: 1rem;
+            line-height: 1.75;
+            margin-bottom: 28px;
+        }
+
+        .project {
+            margin-bottom: 28px;
+        }
+
+        .project p {
+            font-size: 1rem;
+            line-height: 1.75;
+        }
+
+        footer {
+            max-width: 660px;
+            margin: 0 auto;
+            padding: 0 40px 64px;
+            display: flex;
+            gap: 28px;
+        }
+
+        a {
+            color: #6b8f50;
+            text-decoration: none;
+            border-bottom: 1px solid #6b8f50;
+            padding-bottom: 1px;
+            transition: border-color 0.15s ease;
+        }
+
+        a:hover {
+            border-bottom-color: transparent;
+        }
+
+        footer a {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            main, footer {
+                padding-left: 28px;
+                padding-right: 28px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <header>
+            <h1>Sofia Orellana</h1>
+            <p class="subtitle">Neuroscientist</p>
+            <p class="tagline">I am a neuroscientist interested in human flourishing.</p>
+        </header>
+
+        <section class="research">
+            <p class="research-label">PhD &mdash; University of Cambridge &mdash; Neurodevelopment</p>
+
+            <div class="project">
+                <p>In my <a href="https://www.pnas.org/doi/10.1073/pnas.2304704121" target="_blank" rel="noopener">first project</a> I examined how physical health changes associated with early life stress are associated with changes in brain structure in adulthood. Brain and body are often examined separately, despite ample evidence of their mutual influence. I believe that properly describing these interactions can teach us something about how psychiatric illness is developed and sustained, and how we may effectively treat it.</p>
+            </div>
+
+            <div class="project">
+                <p>In my second project I described how different brain regions are synchronised in their structural change across adolescence. Some regions primarily orchestrate sensory and motor processes (seeing, riding a bike), others orchestrate more abstract thought (thinking about others, planning dinner). If we understand how these are jointly changing after puberty, then we can better understand how the cognitive changes we observe in adolescence come about.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://github.com/s-orellana" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://uk.linkedin.com/in/sofia-c-orellana" target="_blank" rel="noopener">LinkedIn</a>
+    </footer>
+
+</body>
+</html>
