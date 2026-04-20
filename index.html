@@ -121,11 +121,100 @@
             border-top: 1px solid #ddd;
         }
 
+        .pub-list,
+        .talk-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .pub-list li {
+            font-size: 0.95rem;
+            line-height: 1.55;
+            margin-bottom: 18px;
+        }
+
+        .pub-list li:last-child,
+        .talk-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .pub-list .own-name {
+            font-weight: bold;
+        }
+
+        .pub-list .pub-title {
+            font-style: italic;
+        }
+
+        .pub-list .pub-venue {
+            color: #444;
+        }
+
+        .pub-group-label {
+            font-size: 0.72rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #555;
+            margin-bottom: 12px;
+            margin-top: 4px;
+        }
+
+        .pub-list + .pub-group-label {
+            margin-top: 24px;
+        }
+
+        .talk-list li {
+            font-size: 0.95rem;
+            line-height: 1.55;
+            margin-bottom: 14px;
+        }
+
+        .talk-list .talk-date {
+            font-style: italic;
+            color: #444;
+        }
+
+        .press-intro {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .press-more {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-top: 16px;
+            color: #444;
+        }
+
+        .methods-group {
+            margin-bottom: 20px;
+        }
+
+        .methods-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .methods-group h4 {
+            font-size: 0.72rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #555;
+            font-weight: normal;
+            margin-bottom: 6px;
+        }
+
+        .methods-group p {
+            font-size: 0.95rem;
+            line-height: 1.65;
+        }
+
         footer {
             max-width: 660px;
             margin: 0 auto;
             padding: 0 40px 64px;
             display: flex;
+            flex-wrap: wrap;
             gap: 28px;
         }
 
@@ -165,14 +254,14 @@
             <h1>Sofia Orellana</h1>
             <p class="subtitle">Neuroscientist</p>
             <div class="tagline">
-                <p class="tagline-main">I work on neurodevelopment and its intersection with human health.</p>
+                <p class="tagline-main">I combine clinical data, neuroimaging and network science to understand how early experiences and physical health shape the developing brain, from childhood through adulthood.</p>
                 <p class="tagline-meta">I recently completed my PhD under Ed Bullmore &amp; Petra Vértes at the University of Cambridge.</p>
             </div>
         </header>
 
         <section class="research">
             <details>
-                <summary>PhD work</summary>
+                <summary>Research</summary>
 
                 <div class="project">
                     <p>In my <a href="https://www.pnas.org/doi/10.1073/pnas.2304704121" target="_blank" rel="noopener">first project</a> I examined how immuno-metabolic health changes associated with early life stress are linked to differences in brain structure in adulthood. Brain and body are often examined separately, despite ample evidence of their mutual influence. I believe that properly describing these interactions can teach us something about how psychiatric illness is developed and sustained, and how we may effectively treat it.</p>
@@ -184,24 +273,136 @@
             </details>
 
             <details>
-                <summary>Technical skills</summary>
+                <summary>Press</summary>
 
-                <div class="project">
-                    <p>In my work I regularly deal with large-scale datasets and complex analytics pipelines. I am comfortable working with:</p>
-                    <ul class="skills-list">
-                        <li>Clinical data</li>
-                        <li>MRI data</li>
-                        <li>Cluster computing</li>
-                    </ul>
+                <p class="press-intro">My 2024 PNAS paper on childhood maltreatment and adult brain structure was covered by news outlets internationally. A selection:</p>
+
+                <ul class="talk-list press-list">
+                    <li>
+                        <span class="talk-date">April 2024</span> — <a href="https://www.cam.ac.uk/research/news/study-unpicks-why-childhood-maltreatment-continues-to-impact-on-mental-and-physical-health-into" target="_blank" rel="noopener">University of Cambridge</a>: <em>Study unpicks why childhood maltreatment continues to impact on mental and physical health into adulthood.</em>
+                    </li>
+                    <li>
+                        <span class="talk-date">April 2024</span> — <a href="https://www.sciencedaily.com/releases/2024/04/240411130350.htm" target="_blank" rel="noopener">ScienceDaily</a>.
+                    </li>
+                    <li>
+                        <span class="talk-date">April 2024</span> — <a href="https://medicalxpress.com/news/2024-04-unpicks-childhood-maltreatment-impact-mental.html" target="_blank" rel="noopener">Medical Xpress</a>.
+                    </li>
+                    <li>
+                        <span class="talk-date">May 2024</span> — <a href="https://elpais.com/ciencia/materia-gris/2024-05-15/como-el-maltrato-infantil-condiciona-la-salud-de-quien-lo-sufrio.html" target="_blank" rel="noopener">El País</a> (in Spanish): <em>Cómo el maltrato infantil condiciona la salud de quien lo sufrió.</em>
+                    </li>
+                </ul>
+
+                <p class="press-more"><a href="https://pnas.altmetric.com/details/162027358/news" target="_blank" rel="noopener">Full coverage via Altmetric</a> (29 outlets, 38 stories).</p>
+            </details>
+
+            <!-- PUBLICATIONS SECTION — commented out for now. Uncomment the block below to restore.
+            <details>
+                <summary>Publications</summary>
+
+                <p class="pub-group-label">First-author</p>
+                <ul class="pub-list">
+                    <li>
+                        <span class="own-name">Orellana, S.C.</span>, Bethlehem, R.A.I., Simpson-Kent, I.L., van Harmelen, A., Vértes, P.E. &amp; Bullmore, E.T. (2024).
+                        <span class="pub-title">Childhood maltreatment influences adult brain structure through its effects on immune, metabolic, and psychosocial factors.</span>
+                        <span class="pub-venue">Proceedings of the National Academy of Sciences.</span>
+                        <a href="https://doi.org/10.1073/pnas.2304704121" target="_blank" rel="noopener">DOI</a>
+                    </li>
+                    <li>
+                        <span class="own-name">Orellana, S.C.</span>, Monaghan, A., Dorfschmidt, L., Sebenius, I.S., Hutchins, E., Dear, R., Romero-Garcia, R., Bethlehem, R.A.I., Vértes, P.E. &amp; Bullmore, E.T.
+                        <span class="pub-title">Coordinated dynamics of structural similarity development from childhood to adolescence underpin the maturation of canonical macro-scale functional connectivity networks.</span>
+                        <span class="pub-venue">In preparation.</span>
+                    </li>
+                </ul>
+
+                <p class="pub-group-label">Contributed</p>
+                <ul class="pub-list">
+                    <li>
+                        König, M., Smith, A.J., Moreno-López, L., Davidson, E., Dauvermann, M., <span class="own-name">Orellana, S.</span>, McCormick, E.M., Peris, T.S., Kaser, M., Ioannidis, K. &amp; van Harmelen, A.-L. (2025).
+                        <span class="pub-title">Friendship buffering effects on mental health symptoms before and during the COVID-19 pandemic: a UK longitudinal study of young people with childhood adversity.</span>
+                        <span class="pub-venue">Development and Psychopathology.</span>
+                        <a href="https://doi.org/10.1017/S0954579424001986" target="_blank" rel="noopener">DOI</a>
+                    </li>
+                    <li>
+                        Dauvermann, M.R., Moreno-Lopéz, L., Vai, B., González-García, N., <span class="own-name">Orellana, S.</span>, Jones, P.B., Bullmore, E., Goodyer, I.M. &amp; van Harmelen, A.-L. (2024).
+                        <span class="pub-title">Early adolescent perceived friendship quality aids affective and neural responses to social inclusion and exclusion in young adults with and without adverse childhood experiences.</span>
+                        <span class="pub-venue">Social Cognitive and Affective Neuroscience.</span>
+                        <a href="https://doi.org/10.1093/scan/nsae044" target="_blank" rel="noopener">DOI</a>
+                    </li>
+                    <li>
+                        König, M., Berhe, O., Ioannidis, K., <span class="own-name">Orellana, S.</span>, Davidson, E., Kaser, M., RAISE Consortium, Moreno-López, L. &amp; van Harmelen, A.-L. (2023).
+                        <span class="pub-title">The stress-buffering role of friendships in young people with childhood threat experiences: a preliminary report.</span>
+                        <span class="pub-venue">European Journal of Psychotraumatology.</span>
+                        <a href="https://doi.org/10.1080/20008066.2023.2281971" target="_blank" rel="noopener">DOI</a>
+                    </li>
+                    <li>
+                        Meier, I.M., Montoya, E.R., Spencer, H., <span class="own-name">Orellana, S.C.</span>, van Buuren, M., van Honk, J. &amp; Bos, P.A. (2023).
+                        <span class="pub-title">Preliminary data on oxytocin modulation of neural reactivity in women to emotional stimuli of children depending on childhood emotional neglect.</span>
+                        <span class="pub-venue">Developmental Psychobiology.</span>
+                        <a href="https://doi.org/10.1002/dev.22349" target="_blank" rel="noopener">DOI</a>
+                    </li>
+                    <li>
+                        Smith, A.J., Moreno-López, L., Davidson, E., Dauvermann, M., <span class="own-name">Orellana, S.</span>, Soneson, E., Ioannidis, K., Kaser, M. &amp; van Harmelen, A.-L. (2021).
+                        <span class="pub-title">REACT study protocol: Resilience after the COVID-19 threat (REACT) in adolescents.</span>
+                        <span class="pub-venue">BMJ Open.</span>
+                        <a href="https://doi.org/10.1136/bmjopen-2020-042824" target="_blank" rel="noopener">DOI</a>
+                    </li>
+                </ul>
+            </details>
+            -->
+            <!-- END PUBLICATIONS SECTION -->
+
+            <details>
+                <summary>Selected talks</summary>
+
+                <ul class="talk-list">
+                    <li>
+                        <span class="talk-date">November 2025</span> — Research keynote, NHS Luton Safeguarding Conference. <em>The effects of early adversity and neglect on adult health and brain structure.</em>
+                    </li>
+                    <li>
+                        <span class="talk-date">January 2024</span> — Oral presentation, Stress-NL Research Masterclass. <em>Immuno-metabolic and psychosocial mediators of early life stress on adult brain structure.</em>
+                    </li>
+                    <li>
+                        <span class="talk-date">June 2020</span> — Plenary, 20th International Conference on Computational Science (ICCS). <em>Assessing hub overload and cascading failure in neurological injury — a complex networks approach.</em>
+                    </li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Methods &amp; tools</summary>
+
+                <div class="methods-group">
+                    <h4>Statistics &amp; modelling</h4>
+                    <p>Multivariate models linking brain, body and behaviour, including mediation analyses; graph-theoretic analyses of structural brain networks; structural similarity / morphometric similarity network construction; analyses of coordinated brain maturation across development.</p>
+                </div>
+
+                <div class="methods-group">
+                    <h4>Neuroimaging</h4>
+                    <p>Structural MRI and diffusion-weighted imaging. FreeSurfer, FSL and SPM — from raw data through preprocessing, surface reconstruction, manual quality control, and network construction.</p>
+                </div>
+
+                <div class="methods-group">
+                    <h4>Programming &amp; infrastructure</h4>
+                    <p>Python, R, MATLAB and Bash. Comfortable building and running analysis pipelines on high-performance computing (SLURM) clusters, and working with large cohorts — including UK Biobank (n ≈ 10,000) and deeply-phenotyped longitudinal developmental samples.</p>
+                </div>
+
+                <div class="methods-group">
+                    <h4>Teaching</h4>
+                    <p>Taught MRI preprocessing with FreeSurfer, Bash scripting and HPC job submission to Master's students at the University of Cambridge.</p>
+                </div>
+
+                <div class="methods-group">
+                    <h4>Code</h4>
+                    <p>Analysis code from my published work is available on <a href="https://github.com/s-orellana" target="_blank" rel="noopener">GitHub</a>.</p>
                 </div>
             </details>
         </section>
     </main>
 
     <footer>
+        <a href="mailto:sdco2@cam.ac.uk">Email</a>
         <a href="https://github.com/s-orellana" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://uk.linkedin.com/in/sofia-c-orellana" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://scholar.google.com/citations?user=67bRZDMAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+        <a href="https://uk.linkedin.com/in/sofia-c-orellana" target="_blank" rel="noopener">LinkedIn</a>
     </footer>
 
 </body>
