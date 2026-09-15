@@ -40,3 +40,10 @@ resources/_gen/
 dist/
 build/
 *.tmp
+
+# Personal notes and parked snippets (local-only)
+*.local.md
+*.local.html
+
+# Alternate / experimental designs — never deploy, never commit
+experiments.local/

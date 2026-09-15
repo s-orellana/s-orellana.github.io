@@ -3,407 +3,371 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sofia Orellana</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            background: #fff;
-            color: #000;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        main {
-            max-width: 660px;
-            margin: 0 auto;
-            padding: 88px 40px 64px;
-            flex: 1;
-        }
-
-        header {
-            margin-bottom: 56px;
-        }
-
-        h1 {
-            font-size: 2.6rem;
-            font-weight: normal;
-            letter-spacing: 0.01em;
-            margin-bottom: 6px;
-        }
-
-        .subtitle {
-            font-size: 1.05rem;
-            font-style: italic;
-        }
-
-        .tagline {
-            margin-top: 32px;
-        }
-
-        .tagline-main {
-            font-size: 1.05rem;
-            line-height: 1.65;
-        }
-
-        .tagline-meta {
-            margin-top: 10px;
-            font-size: 0.88rem;
-            font-style: italic;
-            color: #444;
-        }
-
-        .research {
-            border-top: 1px solid #000;
-            padding-top: 32px;
-        }
-
-        details {
-            cursor: pointer;
-        }
-
-        details summary {
-            list-style: none;
-            display: flex;
-            align-items: baseline;
-            gap: 10px;
-            font-size: 0.72rem;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-            margin-bottom: 0;
-            user-select: none;
-        }
-
-        details summary::-webkit-details-marker {
-            display: none;
-        }
-
-        details summary::after {
-            content: '+';
-            font-size: 0.9rem;
-            letter-spacing: 0;
-            color: #555;
-        }
-
-        details[open] summary::after {
-            content: '\2212';
-        }
-
-        details[open] summary {
-            margin-bottom: 28px;
-        }
-
-        .project {
-            margin-bottom: 28px;
-        }
-
-        .project p {
-            font-size: 1rem;
-            line-height: 1.75;
-        }
-
-        .skills-list {
-            margin-top: 14px;
-            padding-left: 1.2em;
-            font-size: 1rem;
-            line-height: 2;
-        }
-
-        .research > details + details {
-            margin-top: 16px;
-            padding-top: 16px;
-            border-top: 1px solid #ddd;
-        }
-
-        .pub-list,
-        .talk-list {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .pub-list li {
-            font-size: 0.95rem;
-            line-height: 1.55;
-            margin-bottom: 18px;
-        }
-
-        .pub-list li:last-child,
-        .talk-list li:last-child {
-            margin-bottom: 0;
-        }
-
-        .pub-list .own-name {
-            font-weight: bold;
-        }
-
-        .pub-list .pub-title {
-            font-style: italic;
-        }
-
-        .pub-list .pub-venue {
-            color: #444;
-        }
-
-        .pub-group-label {
-            font-size: 0.72rem;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-            color: #555;
-            margin-bottom: 12px;
-            margin-top: 4px;
-        }
-
-        .pub-list + .pub-group-label {
-            margin-top: 24px;
-        }
-
-        .talk-list li {
-            font-size: 0.95rem;
-            line-height: 1.55;
-            margin-bottom: 14px;
-        }
-
-        .talk-list .talk-date {
-            font-style: italic;
-            color: #444;
-        }
-
-        .press-intro {
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin-bottom: 16px;
-        }
-
-        .press-more {
-            font-size: 0.9rem;
-            line-height: 1.6;
-            margin-top: 16px;
-            color: #444;
-        }
-
-        .methods-group {
-            margin-bottom: 20px;
-        }
-
-        .methods-group:last-child {
-            margin-bottom: 0;
-        }
-
-        .methods-group h4 {
-            font-size: 0.72rem;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-            color: #555;
-            font-weight: normal;
-            margin-bottom: 6px;
-        }
-
-        .methods-group p {
-            font-size: 0.95rem;
-            line-height: 1.65;
-        }
-
-        footer {
-            max-width: 660px;
-            margin: 0 auto;
-            padding: 0 40px 64px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 28px;
-        }
-
-        a {
-            color: #6b8f50;
-            text-decoration: none;
-            border-bottom: 1px solid #6b8f50;
-            padding-bottom: 1px;
-            transition: border-color 0.15s ease;
-        }
-
-        a:hover {
-            border-bottom-color: transparent;
-        }
-
-        footer a {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 600px) {
-            main, footer {
-                padding-left: 28px;
-                padding-right: 28px;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+    <title>Sofia Orellana — Computational Neuroscience</title>
+    <meta name="description" content="Sofia Orellana — Computational Neuroscience at the University of Cambridge. Developmental neuroimaging, immuno-metabolic mediators of early-life stress, and complex brain networks.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo:wght@400&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<div class="page">
+
     <main>
-        <header>
-            <h1>Sofia Orellana</h1>
-            <p class="subtitle">Neuroscientist</p>
-            <div class="tagline">
-                <p class="tagline-main">I combine clinical data, neuroimaging and network science to understand how early experiences and physical health shape the developing brain, from childhood through adulthood.</p>
-                <p class="tagline-meta">I recently completed my PhD under Ed Bullmore &amp; Petra Vértes at the University of Cambridge.</p>
+
+        <header class="hero" data-nodes="brains,immuno,adversity">
+            <div class="kicker">
+                <span>Computational Neuroscience</span>
+                <span class="sep">/</span>
+                <span>University of Cambridge</span>
             </div>
+            <h1 class="hero-name">Sofia Orellana</h1>
+            <p class="hero-tagline">Hi! I am a neuroscientist interested in how brains become such intelligent biological entities and how our bodies and social lives shape them! I recently finished a PhD in Computational Neuroscience in the Department of Psychiatry at Cambridge.</p>
+            <nav class="pill-nav">
+                <a href="#research">Research</a>
+                <a href="education.html">Education</a>
+                <a href="publications.html">Publications</a>
+                <a href="press.html">Press</a>
+                <a href="#writing">Writing</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </header>
 
-        <section class="research">
-            <details>
-                <summary>Research</summary>
-
-                <div class="project">
-                    <p>In my <a href="https://www.pnas.org/doi/10.1073/pnas.2304704121" target="_blank" rel="noopener">first project</a> I examined how immuno-metabolic health changes associated with early life stress are linked to differences in brain structure in adulthood. Brain and body are often examined separately, despite ample evidence of their mutual influence. I believe that properly describing these interactions can teach us something about how psychiatric illness is developed and sustained, and how we may effectively treat it.</p>
-                </div>
-
-                <div class="project">
-                    <p>In my second project I described how different brain regions are synchronised in their structural change across adolescence. Some regions primarily orchestrate sensory and motor processes (seeing, riding a bike), others orchestrate more abstract thought (thinking about others, planning dinner). If we understand how these are jointly changing after puberty, then we can better understand the unique emotional and social changes we observe in adolescents.</p>
-                </div>
-            </details>
-
-            <details>
-                <summary>Press</summary>
-
-                <p class="press-intro">My 2024 PNAS paper on childhood maltreatment and adult brain structure was covered by news outlets internationally. A selection:</p>
-
-                <ul class="talk-list press-list">
-                    <li>
-                        <span class="talk-date">April 2024</span> — <a href="https://www.cam.ac.uk/research/news/study-unpicks-why-childhood-maltreatment-continues-to-impact-on-mental-and-physical-health-into" target="_blank" rel="noopener">University of Cambridge</a>: <em>Study unpicks why childhood maltreatment continues to impact on mental and physical health into adulthood.</em>
-                    </li>
-                    <li>
-                        <span class="talk-date">April 2024</span> — <a href="https://www.sciencedaily.com/releases/2024/04/240411130350.htm" target="_blank" rel="noopener">ScienceDaily</a>.
-                    </li>
-                    <li>
-                        <span class="talk-date">April 2024</span> — <a href="https://medicalxpress.com/news/2024-04-unpicks-childhood-maltreatment-impact-mental.html" target="_blank" rel="noopener">Medical Xpress</a>.
-                    </li>
-                    <li>
-                        <span class="talk-date">May 2024</span> — <a href="https://elpais.com/ciencia/materia-gris/2024-05-15/como-el-maltrato-infantil-condiciona-la-salud-de-quien-lo-sufrio.html" target="_blank" rel="noopener">El País</a> (in Spanish): <em>Cómo el maltrato infantil condiciona la salud de quien lo sufrió.</em>
-                    </li>
-                </ul>
-
-                <p class="press-more"><a href="https://pnas.altmetric.com/details/162027358/news" target="_blank" rel="noopener">Full coverage via Altmetric</a> (29 outlets, 38 stories).</p>
-            </details>
-
-            <!-- PUBLICATIONS SECTION — commented out for now. Uncomment the block below to restore.
-            <details>
-                <summary>Publications</summary>
-
-                <p class="pub-group-label">First-author</p>
-                <ul class="pub-list">
-                    <li>
-                        <span class="own-name">Orellana, S.C.</span>, Bethlehem, R.A.I., Simpson-Kent, I.L., van Harmelen, A., Vértes, P.E. &amp; Bullmore, E.T. (2024).
-                        <span class="pub-title">Childhood maltreatment influences adult brain structure through its effects on immune, metabolic, and psychosocial factors.</span>
-                        <span class="pub-venue">Proceedings of the National Academy of Sciences.</span>
-                        <a href="https://doi.org/10.1073/pnas.2304704121" target="_blank" rel="noopener">DOI</a>
-                    </li>
-                    <li>
-                        <span class="own-name">Orellana, S.C.</span>, Monaghan, A., Dorfschmidt, L., Sebenius, I.S., Hutchins, E., Dear, R., Romero-Garcia, R., Bethlehem, R.A.I., Vértes, P.E. &amp; Bullmore, E.T.
-                        <span class="pub-title">Coordinated dynamics of structural similarity development from childhood to adolescence underpin the maturation of canonical macro-scale functional connectivity networks.</span>
-                        <span class="pub-venue">In preparation.</span>
-                    </li>
-                </ul>
-
-                <p class="pub-group-label">Contributed</p>
-                <ul class="pub-list">
-                    <li>
-                        König, M., Smith, A.J., Moreno-López, L., Davidson, E., Dauvermann, M., <span class="own-name">Orellana, S.</span>, McCormick, E.M., Peris, T.S., Kaser, M., Ioannidis, K. &amp; van Harmelen, A.-L. (2025).
-                        <span class="pub-title">Friendship buffering effects on mental health symptoms before and during the COVID-19 pandemic: a UK longitudinal study of young people with childhood adversity.</span>
-                        <span class="pub-venue">Development and Psychopathology.</span>
-                        <a href="https://doi.org/10.1017/S0954579424001986" target="_blank" rel="noopener">DOI</a>
-                    </li>
-                    <li>
-                        Dauvermann, M.R., Moreno-Lopéz, L., Vai, B., González-García, N., <span class="own-name">Orellana, S.</span>, Jones, P.B., Bullmore, E., Goodyer, I.M. &amp; van Harmelen, A.-L. (2024).
-                        <span class="pub-title">Early adolescent perceived friendship quality aids affective and neural responses to social inclusion and exclusion in young adults with and without adverse childhood experiences.</span>
-                        <span class="pub-venue">Social Cognitive and Affective Neuroscience.</span>
-                        <a href="https://doi.org/10.1093/scan/nsae044" target="_blank" rel="noopener">DOI</a>
-                    </li>
-                    <li>
-                        König, M., Berhe, O., Ioannidis, K., <span class="own-name">Orellana, S.</span>, Davidson, E., Kaser, M., RAISE Consortium, Moreno-López, L. &amp; van Harmelen, A.-L. (2023).
-                        <span class="pub-title">The stress-buffering role of friendships in young people with childhood threat experiences: a preliminary report.</span>
-                        <span class="pub-venue">European Journal of Psychotraumatology.</span>
-                        <a href="https://doi.org/10.1080/20008066.2023.2281971" target="_blank" rel="noopener">DOI</a>
-                    </li>
-                    <li>
-                        Meier, I.M., Montoya, E.R., Spencer, H., <span class="own-name">Orellana, S.C.</span>, van Buuren, M., van Honk, J. &amp; Bos, P.A. (2023).
-                        <span class="pub-title">Preliminary data on oxytocin modulation of neural reactivity in women to emotional stimuli of children depending on childhood emotional neglect.</span>
-                        <span class="pub-venue">Developmental Psychobiology.</span>
-                        <a href="https://doi.org/10.1002/dev.22349" target="_blank" rel="noopener">DOI</a>
-                    </li>
-                    <li>
-                        Smith, A.J., Moreno-López, L., Davidson, E., Dauvermann, M., <span class="own-name">Orellana, S.</span>, Soneson, E., Ioannidis, K., Kaser, M. &amp; van Harmelen, A.-L. (2021).
-                        <span class="pub-title">REACT study protocol: Resilience after the COVID-19 threat (REACT) in adolescents.</span>
-                        <span class="pub-venue">BMJ Open.</span>
-                        <a href="https://doi.org/10.1136/bmjopen-2020-042824" target="_blank" rel="noopener">DOI</a>
-                    </li>
-                </ul>
-            </details>
-            -->
-            <!-- END PUBLICATIONS SECTION -->
-
-            <details>
-                <summary>Selected talks</summary>
-
-                <ul class="talk-list">
-                    <li>
-                        <span class="talk-date">November 2025</span> — Research keynote, NHS Luton Safeguarding Conference. <em>The effects of early adversity and neglect on adult health and brain structure.</em>
-                    </li>
-                    <li>
-                        <span class="talk-date">January 2024</span> — Oral presentation, Stress-NL Research Masterclass. <em>Immuno-metabolic and psychosocial mediators of early life stress on adult brain structure.</em>
-                    </li>
-                    <li>
-                        <span class="talk-date">June 2020</span> — Plenary, 20th International Conference on Computational Science (ICCS). <em>Assessing hub overload and cascading failure in neurological injury — a complex networks approach.</em>
-                    </li>
-                </ul>
-            </details>
-
-            <details>
-                <summary>Methods &amp; tools</summary>
-
-                <div class="methods-group">
-                    <h4>Statistics &amp; modelling</h4>
-                    <p>Multivariate models linking brain, body and behaviour, including mediation analyses; graph-theoretic analyses of structural brain networks; structural similarity / morphometric similarity network construction; analyses of coordinated brain maturation across development.</p>
-                </div>
-
-                <div class="methods-group">
-                    <h4>Neuroimaging</h4>
-                    <p>Structural MRI and diffusion-weighted imaging. FreeSurfer, FSL and SPM — from raw data through preprocessing, surface reconstruction, manual quality control, and network construction.</p>
-                </div>
-
-                <div class="methods-group">
-                    <h4>Programming &amp; infrastructure</h4>
-                    <p>Python, R, MATLAB and Bash. Comfortable building and running analysis pipelines on high-performance computing (SLURM) clusters, and working with large cohorts — including UK Biobank (n ≈ 10,000) and deeply-phenotyped longitudinal developmental samples.</p>
-                </div>
-
-                <div class="methods-group">
-                    <h4>Teaching</h4>
-                    <p>Taught MRI preprocessing with FreeSurfer, Bash scripting and HPC job submission to Master's students at the University of Cambridge.</p>
-                </div>
-
-                <div class="methods-group">
-                    <h4>Code</h4>
-                    <p>Analysis code from my published work is available on <a href="https://github.com/s-orellana" target="_blank" rel="noopener">GitHub</a>.</p>
-                </div>
-            </details>
+        <section id="research" data-nodes="brains,immuno,adversity,psychiatry,imaging,networks">
+            <h2 class="h2-lead">Neurodevelopment in context</h2>
+            <p class="lede">I focus on deciphering how the brain develops from childhood to adulthood, but also how our early experiences and our physical health are influencing this process. To do this I work with large-scale datasets of live human brains, like the <a href="https://www.ukbiobank.ac.uk/" target="_blank" rel="noopener">UK Biobank</a> or the <a href="https://abcdstudy.org/" target="_blank" rel="noopener">ABCD Study</a> (a US children's cohort), examining thousands of people at a time. In my work I have touched on psychology, medicine, psychiatry, developmental neuroscience, neuroimaging, computer science and complex-network theory.</p>
+            <p class="lede"><em>The graph on the right gives you an overview!</em></p>
         </section>
+
+        <section data-nodes="immuno,adversity,psychiatry">
+            <div class="kicker"><span>Theme</span><span class="sep">/</span><span>Body to brain</span></div>
+            <h3 class="h3-theme">Social stress, physical health and brain structure</h3>
+            <p class="body-copy">I've worked extensively on how early-life stress impacts immune and metabolic health to shape the brain in adulthood, letting us know a little bit better what role the body has in possibly precipitating the emergence of psychiatric illnesses. If you've read the famous "The Body Keeps the Score" book, <a href="https://doi.org/10.1073/pnas.2304704121" target="_blank" rel="noopener">my work</a> tells you a little bit about <em>how</em>.</p>
+            <p class="body-copy">On this theme I have also collaborated extensively on research examining how social environments contribute to resilience.</p>
+            <div class="tags-row">
+                <span class="tag tag-accent">Immunology</span>
+                <span class="tag tag-neutral">Metabolic health</span>
+                <span class="tag tag-outline">UK Biobank</span>
+            </div>
+        </section>
+
+        <section data-nodes="networks,brains,imaging">
+            <div class="kicker"><span>Theme</span><span class="sep">/</span><span>Maturation</span></div>
+            <h3 class="h3-theme">How does the brain grow?</h3>
+            <p class="body-copy">The transition between childhood and adolescence involves not only the physical changes of puberty but also subtle-yet-significant changes in structure giving rise to adult-like cognition. We also know brains are surprisingly uniform across humans — even if we are all different, the basic stuff is there for most of us! How are the "instructions" for building a brain changing the way regions talk to each other? This is something I am looking into.</p>
+            <div class="tags-row">
+                <span class="tag tag-accent-2">Complex networks</span>
+                <span class="tag tag-neutral">Neurodevelopment</span>
+                <span class="tag tag-outline">ABCD</span>
+            </div>
+        </section>
+
+        <section data-nodes="imaging,networks">
+            <div class="kicker"><span>Theme</span><span class="sep">/</span><span>Craft</span></div>
+            <h3 class="h3-theme">Data, data baby!</h3>
+            <p class="body-copy">Getting meaningful information from thousands of brain scans requires meticulous work, software engineering and quality control. I've built strong pipelines for pre- and post-processing of magnetic and diffusion resonance images (a.k.a. MRI and DWI). You'll find them on my <a href="https://github.com/s-orellana" target="_blank" rel="noopener">GitHub</a> when my next publication is out.</p>
+            <div class="tech-grid">
+                <div><div>Languages</div>Python · R · MATLAB · Bash</div>
+                <div><div>Imaging</div>FreeSurfer · FSL · SPM</div>
+                <div><div>Compute</div>HPC management</div>
+            </div>
+        </section>
+
+        <section id="writing" data-nodes="">
+            <h2 class="h2-lead">Writing</h2>
+            <div class="notes-card">
+                <h3>Nothing here yet</h3>
+                <p>Soon.</p>
+            </div>
+        </section>
+
+        <section id="contact" data-nodes="brains,immuno,adversity,psychiatry,imaging,networks">
+            <h2 class="h2-lead">Contact</h2>
+            <p class="body-copy">Happy to hear from you: email is best, for collaborations, data questions, students thinking about this field, or journalists.</p>
+            <div class="contact-rows">
+                <a href="mailto:sdco2@cam.ac.uk">
+                    <span class="icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z"/></svg>
+                    </span>
+                    sdco2@cam.ac.uk
+                </a>
+                <a href="https://github.com/s-orellana" target="_blank" rel="noopener">
+                    <span class="icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </span>
+                    github.com/s-orellana
+                </a>
+                <a href="https://scholar.google.com/citations?user=67bRZDMAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+                    <span class="icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 9.68 5.07 5.5 12 1.32 18.93 5.5 12 9.68zm0 1.47 7.5-4.5V12c0 3.87-3.13 7.5-7.5 7.5S4.5 15.87 4.5 12V6.65L12 11.15zM5.82 13.5c.4 2.16 2.17 3.93 4.33 4.33v-4.33H5.82zm8.03 4.33c2.16-.4 3.93-2.17 4.33-4.33h-4.33v4.33z"/></svg>
+                    </span>
+                    Google Scholar
+                </a>
+                <a href="https://uk.linkedin.com/in/sofia-c-orellana" target="_blank" rel="noopener">
+                    <span class="icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </span>
+                    sofia-c-orellana
+                </a>
+            </div>
+            <div class="updated">Last updated September 2026</div>
+        </section>
+
     </main>
 
-    <footer>
-        <a href="mailto:sdco2@cam.ac.uk">Email</a>
-        <a href="https://github.com/s-orellana" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://scholar.google.com/citations?user=67bRZDMAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
-        <a href="https://uk.linkedin.com/in/sofia-c-orellana" target="_blank" rel="noopener">LinkedIn</a>
-    </footer>
+    <aside class="rail" aria-label="Idea graph">
+        <div class="rail-head">
+            <span>Idea graph</span>
+            <span id="rail-progress">000%</span>
+        </div>
+        <div class="rail-graph" id="rail-graph">
+            <svg viewBox="0 0 292 560" preserveAspectRatio="none" id="rail-edges"></svg>
+        </div>
+        <div class="rail-panel">
+            <div class="panel-kicker" id="panel-kicker">Now reading</div>
+            <div class="panel-title" id="panel-title">A map of one question</div>
+            <p class="panel-body" id="panel-body">Hover a node to see what it connects to. Click one to jump to the section it belongs to.</p>
+        </div>
+    </aside>
+
+</div>
+
+<script>
+(function () {
+    'use strict';
+
+    const NODES = [
+        { id: 'brains',     label: 'Developing brains', x: 132, y: 258, r: 13, anchor: 'middle', dx: 0,   dy: -26, target: 'research',
+          body: 'The hub. How brain structure is built, and rebuilt, across childhood, adolescence and the rest of a life.' },
+        { id: 'adversity',  label: 'Early adversity',   x: 54,  y: 96,  r: 8,  anchor: 'start',  dx: -6,  dy: -18, target: 'research',
+          body: 'Maltreatment, neglect and early stress as physical exposures with measurable downstream signatures.' },
+        { id: 'immuno',     label: 'Immuno-metabolism', x: 234, y: 158, r: 9,  anchor: 'end',    dx: 14,  dy: -16, target: 'research',
+          body: 'Inflammation and metabolic strain as the routes by which an early environment gets into the brain.' },
+        { id: 'psychiatry', label: 'Psychiatry',        x: 246, y: 372, r: 8,  anchor: 'end',    dx: 14,  dy: 22,  target: 'research',
+          body: 'Where the findings land: mental health outcomes, resilience, and what clinicians and social workers can use.' },
+        { id: 'imaging',    label: 'Neuroimaging',      x: 52,  y: 424, r: 10, anchor: 'start',  dx: -6,  dy: 24,  target: 'research',
+          body: 'MRI preprocessing as a discipline — FreeSurfer, surface editing, pipelines on HPC clusters.' },
+        { id: 'networks',   label: 'Complex networks',  x: 158, y: 508, r: 9,  anchor: 'middle', dx: 0,   dy: 26,  target: 'research',
+          body: 'Graph theory for cortical organisation: how networks mature, and how they fail under injury.' },
+    ];
+
+    const EDGES = [
+        ['brains', 'adversity'], ['brains', 'immuno'], ['brains', 'psychiatry'],
+        ['brains', 'imaging'], ['brains', 'networks'],
+        ['adversity', 'immuno'], ['immuno', 'psychiatry'], ['adversity', 'psychiatry'],
+        ['imaging', 'networks'], ['imaging', 'immuno'], ['networks', 'psychiatry'],
+    ];
+
+    const EDGE_NOTES = {
+        'brains|adversity': 'Adversity is read as a developmental exposure, not only a memory.',
+        'brains|immuno': 'Immune and metabolic state as a mediator of brain structure.',
+        'brains|psychiatry': 'Structural findings translated into psychiatric risk and resilience.',
+        'brains|imaging': 'Nothing about development is visible without a defensible pipeline.',
+        'brains|networks': 'Cortical organisation described as a maturing graph.',
+        'adversity|immuno': 'Childhood maltreatment leaves an inflammatory and metabolic trace.',
+        'immuno|psychiatry': 'Physical medicine and mental health treated as one system.',
+        'adversity|psychiatry': 'Early stress to adult mental health, via the body.',
+        'imaging|networks': 'Preprocessing choices change the network you reconstruct.',
+        'imaging|immuno': 'Biobank-scale imaging joined to peripheral blood markers.',
+        'networks|psychiatry': 'Cascading network failure as a model for clinical decline.',
+    };
+
+    const VIEW_W = 292;
+    const VIEW_H = 560;
+    const DRIFT = 0.3;
+    const SVG_NS = 'http://www.w3.org/2000/svg';
+
+    const graphRoot = document.getElementById('rail-graph');
+    const svg = document.getElementById('rail-edges');
+    const progressEl = document.getElementById('rail-progress');
+    const panelKicker = document.getElementById('panel-kicker');
+    const panelTitle = document.getElementById('panel-title');
+    const panelBody = document.getElementById('panel-body');
+
+    const state = {
+        t: 0,
+        hover: null,
+        active: ['brains'],
+        progress: 0,
+    };
+
+    const edgeEls = EDGES.map(function ([a, b]) {
+        const line = document.createElementNS(SVG_NS, 'line');
+        line.setAttribute('stroke-linecap', 'round');
+        line.setAttribute('vector-effect', 'non-scaling-stroke');
+        svg.appendChild(line);
+        return { a: a, b: b, el: line };
+    });
+
+    const nodeEls = NODES.map(function (n) {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'graph-node';
+        wrapper.dataset.id = n.id;
+        wrapper.style.left = (n.x / VIEW_W * 100).toFixed(3) + '%';
+        wrapper.style.top = (n.y / VIEW_H * 100).toFixed(3) + '%';
+
+        const halo = document.createElement('div');
+        halo.className = 'graph-halo';
+        wrapper.appendChild(halo);
+
+        const dot = document.createElement('div');
+        dot.className = 'graph-dot';
+        wrapper.appendChild(dot);
+
+        const label = document.createElement('div');
+        label.className = 'graph-label';
+        label.textContent = n.label;
+        label.style.left = '0';
+        label.style.top = (n.dy < 0 ? -(n.r + 8) : n.r + 8) + 'px';
+        const tx = n.anchor === 'end' ? '-80%' : '-50%';
+        const ty = n.dy < 0 ? '-100%' : '0';
+        label.style.transform = 'translate(' + tx + ', ' + ty + ')';
+        wrapper.appendChild(label);
+
+        wrapper.addEventListener('mouseenter', function () { state.hover = n.id; render(); });
+        wrapper.addEventListener('mouseleave', function () { state.hover = null; render(); });
+        wrapper.addEventListener('click', function () {
+            const el = document.getElementById(n.target);
+            if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
+        });
+
+        graphRoot.appendChild(wrapper);
+        return { def: n, wrapper: wrapper, halo: halo, dot: dot, label: label };
+    });
+
+    function isOn(id) {
+        return state.active.indexOf(id) !== -1 || state.hover === id;
+    }
+
+    function computePositions() {
+        const pos = {};
+        const t = state.t;
+        NODES.forEach(function (n, i) {
+            const a = t * 0.045 + i * 1.7;
+            pos[n.id] = {
+                x: n.x + Math.sin(a) * 7 * DRIFT + Math.sin(a * 0.43) * 3 * DRIFT,
+                y: n.y + Math.cos(a * 0.8 + i) * 6 * DRIFT + Math.cos(a * 0.31) * 3 * DRIFT,
+            };
+        });
+        return pos;
+    }
+
+    function render() {
+        const pos = computePositions();
+
+        edgeEls.forEach(function (e) {
+            const on = isOn(e.a) && isOn(e.b);
+            const touched = state.hover && (state.hover === e.a || state.hover === e.b);
+            e.el.setAttribute('x1', pos[e.a].x);
+            e.el.setAttribute('y1', pos[e.a].y);
+            e.el.setAttribute('x2', pos[e.b].x);
+            e.el.setAttribute('y2', pos[e.b].y);
+            e.el.setAttribute('stroke', touched
+                ? 'var(--color-accent)'
+                : on ? 'var(--color-accent-2-400)' : 'var(--color-neutral-300)');
+            e.el.setAttribute('stroke-width', touched ? 2 : on ? 1.4 : 0.7);
+        });
+
+        nodeEls.forEach(function (ne) {
+            const n = ne.def;
+            const p = pos[n.id];
+            const on = isOn(n.id);
+            const hot = state.hover === n.id;
+            const isHub = n.id === 'brains';
+            const scale = hot ? 1.28 : on ? 1.08 : 0.82;
+            const dotSize = (n.r * scale * 2).toFixed(1) + 'px';
+            const haloRadius = on ? n.r * (hot ? 3.1 : 2.4) : n.r * 1.4;
+
+            const shiftX = (p.x - n.x).toFixed(2);
+            const shiftY = (p.y - n.y).toFixed(2);
+            ne.wrapper.style.transform = 'translate(' + shiftX + 'px, ' + shiftY + 'px)';
+
+            ne.dot.style.width = dotSize;
+            ne.dot.style.height = dotSize;
+            if (on) {
+                ne.dot.style.background = isHub ? 'var(--color-accent)' : 'var(--color-accent-2-500)';
+                ne.dot.style.borderColor = isHub ? 'var(--color-accent-700)' : 'var(--color-accent-2-700)';
+            } else {
+                ne.dot.style.background = 'var(--color-neutral-300)';
+                ne.dot.style.borderColor = 'var(--color-neutral-400)';
+            }
+
+            const haloSize = (haloRadius * 2).toFixed(1) + 'px';
+            ne.halo.style.width = haloSize;
+            ne.halo.style.height = haloSize;
+            ne.halo.style.background = on
+                ? (isHub
+                    ? 'color-mix(in srgb, var(--color-accent) 18%, transparent)'
+                    : 'color-mix(in srgb, var(--color-accent-2) 18%, transparent)')
+                : 'transparent';
+
+            ne.label.style.color = on ? 'var(--color-neutral-900)' : 'var(--color-neutral-500)';
+        });
+
+        let nextKicker, nextTitle, nextBody;
+        if (state.hover) {
+            const n = NODES.find(function (x) { return x.id === state.hover; });
+            const linkNotes = EDGES
+                .filter(function (pair) { return pair[0] === state.hover || pair[1] === state.hover; })
+                .map(function (pair) { return EDGE_NOTES[pair.join('|')]; })
+                .filter(Boolean);
+            const noteIdx = linkNotes.length ? Math.floor(state.t / 75) % linkNotes.length : 0;
+            nextKicker = 'Node';
+            nextTitle = n.label;
+            nextBody = n.body + (linkNotes.length ? ' — ' + linkNotes[noteIdx] : '');
+        } else {
+            nextKicker = 'Now reading';
+            nextTitle = 'A map of one question';
+            nextBody = 'Hover a node to see what it connects to. Click one to jump to the section it belongs to.';
+        }
+        if (panelKicker.textContent !== nextKicker) panelKicker.textContent = nextKicker;
+        if (panelTitle.textContent !== nextTitle) panelTitle.textContent = nextTitle;
+        if (panelBody.textContent !== nextBody) panelBody.textContent = nextBody;
+
+        progressEl.textContent = String(Math.round(state.progress * 100)).padStart(3, '0') + '%';
+    }
+
+    function track() {
+        const blocks = Array.from(document.querySelectorAll('[data-nodes]'));
+        const centre = window.innerHeight * 0.42;
+        let best = null;
+        let bestD = Infinity;
+        blocks.forEach(function (b) {
+            const rect = b.getBoundingClientRect();
+            const d = Math.abs(rect.top + rect.height / 2 - centre);
+            if (d < bestD) { bestD = d; best = b; }
+        });
+        const list = best ? (best.getAttribute('data-nodes') || '').split(',').filter(Boolean) : [];
+        const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+        const p = Math.min(1, Math.max(0, window.scrollY / max));
+        if (state.active.join() !== list.join() || Math.abs(state.progress - p) >= 0.004) {
+            state.active = list;
+            state.progress = p;
+        }
+    }
+
+    const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    let last = 0;
+    function loop(ts) {
+        if (!prefersReducedMotion && ts - last > 80) {
+            last = ts;
+            state.t += 1;
+            track();
+            render();
+        }
+        requestAnimationFrame(loop);
+    }
+
+    window.addEventListener('scroll', function () { track(); render(); }, { passive: true });
+    window.addEventListener('resize', function () { track(); render(); });
+
+    track();
+    render();
+    if (!prefersReducedMotion) requestAnimationFrame(loop);
+})();
+</script>
 
 </body>
 </html>

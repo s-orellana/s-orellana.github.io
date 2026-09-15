@@ -1,0 +1,30 @@
+---
+description: Live site vs local sandbox — where to edit this project
+alwaysApply: true
+---
+
+# Live site vs sandbox
+
+This repo has two workspaces. **Default to the live site.** Only use the sandbox when the user asks.
+
+## Live site (GitHub Pages)
+
+Edit these files at the project root: `index.html`, `styles.css`, `education.html`, `publications.html`, `press.html`.
+
+Changes here can be committed and deployed.
+
+## Sandbox (local drafts only)
+
+Path: `experiments.local/` (gitignored; never commit or deploy).
+
+Starter copy of the current site: `experiments.local/sandbox/`.
+
+Treat any of these as a request to work **only** in `experiments.local/` (usually `experiments.local/sandbox/` unless they name another subfolder):
+
+- "sandbox"
+- "in the sandbox"
+- "experimental" / "experiment"
+- "draft" / "drafts"
+- "not the live site"
+
+Do not copy sandbox work onto the live site unless the user explicitly asks to promote it.
