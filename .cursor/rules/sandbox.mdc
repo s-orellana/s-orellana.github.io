@@ -9,7 +9,7 @@ This repo has two workspaces. **Default to the live site.** Only use the sandbox
 
 ## Live site (GitHub Pages)
 
-Edit these files at the project root: `index.html`, `styles.css`, `education.html`, `publications.html`, `press.html`.
+Edit these files at the project root: `index.html`, `styles.css`, `graph.js`, `research.html`, `education.html`, `publications.html`, `press.html`, `contact.html`, `writing.html`.
 
 Changes here can be committed and deployed.
 
